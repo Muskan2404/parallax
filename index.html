@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">Taj Mahal</a>
+        <ul>
+            <li> <a href="#" class="active">Home</a></li>
+            <li> <a href="#">About</a></li>
+            <li> <a href="#">Resume</a></li>
+            <li> <a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section id="scene">
+    <h2 id="text">7 WONDERS</h2>
+    <img src="01.png" id="img1">
+    <img src="02.png" id="img2">
+    <img src="03.png" id="img3">
+    <img src="04.png" id="img4">
+    </section>
+    <div class="sec">
+        <h2>Parallax Scrolling</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et corrupti ducimus facere sunt ullam ad similique! Provident consequatur nemo excepturi sed ad? Reiciendis exercitationem quisquam aspernatur alias voluptatum nobis deleniti aut natus commodi sequi eius ducimus quos aliquam ratione ipsa recusandae quia dignissimos repudiandae, similique dolorem corporis voluptate dolore placeat asperiores! Voluptatum possimus consequatur dolorum ipsum excepturi sit iure ea, nam quaerat non, unde hic animi fugiat delectus eum, cum molestiae quasi inventore ex debitis illum quibusdam quas architecto! Alias veniam sint sed dolorem quae, consequuntur nam atque, veritatis ab nihil tenetur, itaque quia. Perspiciatis ea blanditiis aperiam minima eum? Nostrum maxime quis eaque saepe blanditiis unde. Dolores obcaecati magnam expedita consequatur quod necessitatibus? Praesentium optio repellat facilis id molestias velit dignissimos ullam modi vero explicabo ipsa facere autem animi dicta consequuntur earum, voluptatem atque suscipit. <br><br>Eligendi tempora quas totam! Harum eius impedit obcaecati sed ex praesentium ab dolore numquam quaerat libero culpa, nihil molestiae! Tempore quae obcaecati ratione perspiciatis porro blanditiis eos, molestiae animi molestias placeat, itaque mollitia quidem voluptatibus similique omnis! Tempora quibusdam deleniti sapiente dignissimos voluptas, pariatur incidunt quae repudiandae! Nihil aliquid, vel recusandae quae ullam doloribus incidunt fugiat, cupiditate sint quisquam quia repellendus reiciendis sunt saepe assumenda corrupti unde laboriosam beatae sed illum architecto! Mollitia eveniet velit placeat ut dicta ipsa doloribus. Facere modi earum, ullam beatae neque quae labore accusantium veritatis iusto explicabo deserunt ipsa reprehenderit atque cupiditate assumenda harum consequatur quidem dolorum pariatur architecto repellat ipsam cum dolorem eos! Error laboriosam, sunt, veritatis maxime pariatur officia soluta dicta odit ratione labore quidem est iure. Deleniti, odit earum aperiam doloribus ea veniam! Nesciunt tenetur laboriosam nihil dicta facilis quis corrupti delectus quo ab, laudantium doloribus asperiores obcaecati voluptas quibusdam cupiditate rerum illum vero omnis? Eveniet corrupti voluptatibus distinctio officiis pariatur obcaecati, perferendis eum dolorum soluta!</p>
+    </div>
+    <script>
+        let text = document.getElementById('text')
+        let img1 = document.getElementById('img1')
+        let img2 = document.getElementById('img2')
+        let img3 = document.getElementById('img3')
+       
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            text.style.marginTop = value * -1.5+'px';
+            img1.style.top = value * 0.75+'px';
+            img2.style.top = value * 0.5+'px';
+            img3.style.top = value * 0.25+'px';      
+        })
+    </script>
+</body>
+</html>
